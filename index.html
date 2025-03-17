@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Art Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="./index.html" class="hover:text-red-500">Home</a></li>
+                    <li><a href="./contact.html" class="hover:text-red-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <section class="text-center">
+            <h2 class="text-3xl font-semibold mb-4">Gallery</h2>
+            <div class="flex items-center justify-center space-x-4">
+                <button id="prevBtn" class="p-2 rounded-full bg-gray-200 hover:bg-red-500 text-xl">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                <div class="relative">
+                    <div class="slider-image active ">
+                        <h3 class="text-xl font-medium p-8">Starry Night</h3>
+                        <img src="https://saudigazette.com.sa/uploads/images/2021/07/01/1818162.jpeg" class="w-[600px] h-[400px] rounded-3xl object-cover" alt="Artwork1">
+                        <h4 class="text-gray-600">Style: Post-Impressionism</h4>
+                    </div>
+                    <div class="slider-image">
+                        <h3 class="text-xl font-medium p-8">Caravan in the Desert</h3>
+                        <img src="https://images.joseartgallery.com/8493/conversions/landscape-painting-caravan-saudi-arabia-thumb900.jpg"
+                            alt="Artwork2" class="w-[600px] h-[400px] rounded-3xl object-cover">
+                        <h4 class="text-gray-600">Style: Impressionist/Realist Painting</h4>
+                    </div>
+                    <div class="slider-image">
+                        <h3 class="text-xl font-medium p-8">Hijazi architecture</h3>
+                        <img src="https://www.saudigazette.com.sa/uploads/images/2019/02/18/1160113.JPG" alt="Artwork3" class="w-[600px] h-[400px] rounded-3xl object-cover">
+                        <h4 class="text-gray-600">Style: Expressionism</h4>
+                    </div>
+                    <div class="slider-image">
+                        <h3 class="text-xl font-medium p-8">Mural</h3>
+                        <img src="https://saudigazette.com.sa/uploads/images/2019/10/07/1379075.jpg" alt="Artwork4" class="w-[600px] h-[400px] rounded-3xl object-cover">
+                        <h4 class="text-gray-600">Style: Mural painting</h4>
+                    </div>
+                    <div class="slider-image">
+                        <h3 class="text-xl font-medium p-8">Spiral Motif</h3>
+                        <img src="https://www.saudigazette.com.sa/uploads/images/2019/02/18/1160112.JPG" alt="Artwork5" class="w-[600px] h-[400px] rounded-3xl object-cover">
+                        <h4 class="text-gray-600">Style: Abstract textile art</h4>
+                    </div>
+                </div>
+                <button id="nextBtn" class="p-2 rounded-full bg-gray-200 hover:bg-red-500 text-xl">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <div class="text-center mt-6">
+            <a href="./contact.html" class="text-lg text-blue-600 hover:text-red-500">Contact <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-4 fixed bottom-0 w-full">
+        <p>&copy; Art Portfolio</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
